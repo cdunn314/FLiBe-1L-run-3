@@ -1,0 +1,48 @@
+
+name: Process data
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  commit-to-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0 # Ensure full history is available for commits
+
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          environment-file: environment.yml
+          activate-environment: baby_1l_run_3
+
+      - name: Run neutronics model
+        shell: bash -l {0}
+        working-directory: analysis/neutron
+        run: |
+          python openmc_model.py
+          jupyter-nbconvert --to notebook postprocessing.ipynb --execute
+
+      - name: Run tritium model
+        shell: bash -l {0}
+        working-directory: analysis/tritium
+        run: |
+          python tritium_model.py
+          jupyter-nbconvert --to notebook tritium_model.ipynb --execute
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add data/processed_data.json
+          git commit -m "Automated data processing ${date}"
+          git push origin main
