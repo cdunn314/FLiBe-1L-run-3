@@ -1,0 +1,57 @@
+Assay Definition
+
+Assay Description:
+1L FLiBe BABY Experiment standard count, beginning with run FLB-1
+Assay Type: DPM (Single)
+Report Name: Standard report
+Output Data Path: C:\Packard\TriCarb\Results\Default\NEW_Flibe_Long\Various
+Raw Results Path: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20260724_1611\20260724_1611.results
+Comma-Delimited File Name: C:\Packard\TriCarb\Results\Default\NEW_Flibe_Long\Various\SHORT_1L-FLB_IV_3-3_3-4_OV_3-3_3-4.csv
+Assay File Name: C:\Packard\TriCarb\Assays\NEW_Flibe_Long.lsa
+
+Additional Data Files Generated with this Protocol:
+Standard report
+		[Excel]	SHORT_1L-FLB_IV_3-3_3-4_OV_3-3_3-4.csv
+
+
+Count Conditions
+
+Nuclide: LIBRA UG LLT NM      
+   Quench Indicator: tSIE
+   External Std Terminator (sec): 0.5 2s%
+   Pre-Count Delay (min): 0.00
+Quench Set:                   
+   Low Energy: 3H-UG-LLT-NM-C
+Count Time (min): 100.00
+Count Mode: Normal                                          
+Assay Count Cycles: 1         Repeat Sample Count: 1        
+Number of Vials/Sample: 1     Calculate % Reference: Off                                  
+
+
+Background Subtract: Off
+Low CPM Threshold: Off
+2 Sigma % Terminator: Off
+
+Regions         LL       UL
+A              0.5      5.0
+B              0.5     10.0
+C              0.0     18.6
+
+
+Count Corrections
+
+Static Controller: On         Luminescence Correction: On     GCT: n/a
+Colored Samples: Off          Heterogeneity Monitor: Off      PAC: Disabled
+Coincidence Time (nsec): 18   Delay Before Burst (nsec): 75   PAC Strength: n/a   Auxiliary Spectrum: n/a
+
+
+7/24/2026 4:19:12 PM:  Warning: User Has Modified Count Conditions.
+S#,SMPL_ID,Bq:1,CPMA,A:2S%,LUM,tSIE,Eff Nuc1 In A,Count Time,DPM1
+1,1L-FLB-IV_3-3-3,2.404,39.648,12.44,1,321.91,27.49,7,144.248
+2,1L-FLB-IV_3-4-3,1.413,21.800,20.18,2,298.69,25.71,5,84.797
+Missing vial 3.
+4,1L-FLB-IV_3-3-1,0.319,5.400,48.57,4,333.94,28.20,5,19.152
+5,1L-FLB-IV_3-4-1,0.330,5.600,44.03,2,335.02,28.26,5,19.817
+Missing vial 6.
+7,1L-FLB-OV_3-3-1,2.110,32.800,15.81,1,300.96,25.90,5,126.624
+8,1L-FLB-OV_3-4-1,1.678,26.400,17.54,0,304.72,26.23,5,100.662

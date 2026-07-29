@@ -23,7 +23,7 @@ jobs:
         with:
           auto-update-conda: true
           environment-file: environment.yml
-          activate-environment: baby_1l_run_3
+          activate-environment: flibe-1l-run-3
 
       - name: Run neutronics model
         shell: bash -l {0}

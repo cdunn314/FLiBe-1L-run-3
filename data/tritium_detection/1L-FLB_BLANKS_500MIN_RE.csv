@@ -1,0 +1,56 @@
+Assay Definition
+
+Assay Description:
+1L FLiBe BABY Experiment standard count, beginning with run FLB-1
+Assay Type: DPM (Single)
+Report Name: Standard report
+Output Data Path: C:\Packard\TriCarb\Results\Default\NEW_Flibe_Long\Various
+Raw Results Path: C:\Packard\Tricarb\Results\Default\NEW_Flibe_Long\20260216_2038\20260216_2038.results
+Comma-Delimited File Name: C:\Packard\TriCarb\Results\Default\NEW_Flibe_Long\Various\1L-FLB_BLANKS_500MIN_RE.csv
+Assay File Name: C:\Packard\TriCarb\Assays\NEW_Flibe_Long.lsa
+
+Additional Data Files Generated with this Protocol:
+Standard report
+		[Excel]	1L-FLB_BLANKS_500MIN_RE.csv
+
+
+Count Conditions
+
+Nuclide: LIBRA UG LLT NM      
+   Quench Indicator: tSIE
+   External Std Terminator (sec): 0.5 2s%
+   Pre-Count Delay (min): 0.00
+Quench Set:                   
+   Low Energy: 3H-UG-LLT-NM-C
+Count Time (min): 500.00
+Count Mode: Normal                                          
+Assay Count Cycles: 1         Repeat Sample Count: 1        
+Number of Vials/Sample: 1     Calculate % Reference: Off                                  
+
+
+Background Subtract: Off
+Low CPM Threshold: Off
+2 Sigma % Terminator: Off
+
+Regions         LL       UL
+A              0.5      5.0
+B              0.5     10.0
+C              0.0     18.6
+
+
+Count Corrections
+
+Static Controller: On         Luminescence Correction: On     GCT: n/a
+Colored Samples: Off          Heterogeneity Monitor: Off      PAC: Disabled
+Coincidence Time (nsec): 18   Delay Before Burst (nsec): 75   PAC Strength: n/a   Auxiliary Spectrum: n/a
+
+
+S#,SMPL_ID,Bq:1,CPMA,A:2S%,LUM,tSIE,Eff Nuc1 In A,Count Time,DPM1
+1,FLB_BL-2,0.160,3.268,4.98,0,477.57,34.03,500,9.604
+2,FLB_BL-4,0.179,3.466,4.83,0,413.23,32.29,500,10.736
+3,FLB_BL-6,0.215,3.806,4.61,0,357.40,29.51,500,12.899
+4,FLB_BL-8,0.234,3.830,4.60,0,318.47,27.28,500,14.038
+5,FLB_BL-9,0.267,4.140,4.42,0,300.18,25.84,500,16.024
+6,FLB_BL-10,0.292,4.328,4.32,0,286.72,24.68,500,17.538
+7,FLB_BL-11,0.299,4.226,4.37,0,273.69,23.53,500,17.962
+8,FLB_BL-12,0.324,4.376,4.30,0,261.78,22.48,500,19.469
