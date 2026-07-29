@@ -1,4 +1,4 @@
-name: libra-run-env
+name: flibe-1l-run-3
 channels:
   - conda-forge
 dependencies:
