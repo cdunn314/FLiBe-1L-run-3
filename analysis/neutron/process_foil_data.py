@@ -495,7 +495,9 @@ def calculate_neutron_rate_from_foil(foil_measurements,
                                      efficiency_coeffs,
                                      search_width=330,
                                      irradiations=irradiations,
-                                     time_generator_off=time_generator_off):
+                                     time_generator_off=time_generator_off,
+                                     efficiency_function=None,
+                                     efficiency_function_args=None):
     neutron_rates = {}
     neutron_rate_errs = {}
 
@@ -512,7 +514,9 @@ def calculate_neutron_rate_from_foil(foil_measurements,
                 calibration_coeffs=calibration_coeffs[ch],
                 efficiency_coeffs=efficiency_coeffs[ch],
                 channel_nb=ch,
-                search_width=search_width)
+                search_width=search_width,
+                efficiency_function=efficiency_function,
+                efficiency_function_args=efficiency_function_args[ch])
             
             neutron_rate = measurement.get_neutron_rate(
                 channel_nb=ch,
