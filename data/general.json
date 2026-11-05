@@ -178,7 +178,7 @@
                     "irradiation_date": "7/22/2026",
                     "number_of_foils": 4,
                     "distance_to_source": {
-                        "value": 5,
+                        "value": 4.6,
                         "unit": "cm"
                     },
                     "mass": {
@@ -207,7 +207,7 @@
                     "irradiation_date": "7/22/2026",
                     "number_of_foils": 4,
                     "distance_to_source": {
-                        "value": 5,
+                        "value": 5.2,
                         "unit": "cm"
                     },
                     "mass": {
@@ -236,7 +236,7 @@
                     "irradiation_date": "7/22/2026",
                     "number_of_foils": 4,
                     "distance_to_source": {
-                        "value": 5,
+                        "value": 4.6,
                         "unit": "cm"
                     },
                     "mass": {
@@ -265,7 +265,7 @@
                     "irradiation_date": "7/22/2026",
                     "number_of_foils": 4,
                     "distance_to_source": {
-                        "value": 5,
+                        "value": 5.2,
                         "unit": "cm"
                     },
                     "mass": {
